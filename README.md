@@ -1,4 +1,4 @@
-# Expense-tracker
+# Poll-Application
 A poll application. where you can create, update, delete and participate on a poll and lot more....
 
 #### [click-here-to-visit-live-App](https://mojar-poll.netlify.app/)
