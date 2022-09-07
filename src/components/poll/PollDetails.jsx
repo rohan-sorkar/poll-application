@@ -27,14 +27,14 @@ const PollDetails = ({ selectedPoll, deletePoll, getOpinion, updatePoll }) => {
     }
   }
   return (
-    <div className="ml-20 max-w-xl">
-      <h3>{selectedPoll.title}</h3>
+    <div className="sm:ml-20 max-w-xl mt-8 sm:mt-0">
+      <h3 className="text-xl sm:text-2xl">{selectedPoll.title} ?</h3>
       <p>{selectedPoll.description}</p>
       <div className="flex items-center justify-between">
         <h5 className="underline">Options</h5>
         <div>
-          <button onClick={handleOpenModal} className="btn bg-green-200 text-green-600">Edit</button>
-          <button onClick={() => deletePoll(selectedPoll.id)} className="btn bg-red-200 text-red-600 ml-3">delete</button>
+          <button onClick={handleOpenModal} className="bg-green-200 text-green-600 py-2 px-4 sm:px-8 rounded-xl font-medium">Edit</button>
+          <button onClick={() => deletePoll(selectedPoll.id)} className=" bg-red-200 text-red-600 ml-3 py-2 px-4 sm:px-8 rounded-xl font-medium">delete</button>
         </div>
       </div>
 
